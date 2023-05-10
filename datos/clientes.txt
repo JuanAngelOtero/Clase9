@@ -1,3 +1,3 @@
-juan Pablo Medina;juanpmedina;12345678;12345678;1234567891;juanp@gmail.com;preg1;res1;preg2;res2;como se llama mi gato que murio en 2000;Ferdinan
-
-
+juan Pablo Medina;juanpmedina;12345678;1234567891;juanp@gmail.com;preg1;res1;preg2;res2;como se llama mi gato que murio en 2000;Ferdinan
+Julian Medina;jualinam;12345678;1234567897;julian@elpoli.edu.co;gato;tom;perro;rockie;bicicleta;triciclo
+juan angel;juanop;123456;123456789;juan@elpoli.edu.co;como  se llama tu gato;tom;como se llama tu perro;rocko;tines mas mascotas ;no
