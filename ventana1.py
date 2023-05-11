@@ -589,16 +589,16 @@ class Ventana1(QMainWindow):
                     break
 
 
-        # si no existe usuario con este documento:
-        if (
-                not existeDocumento
-        ):
-            # Escribimos el texto explicativo
-            self.mensaje.setText("No existe un usuario con este documento:\n"
-                                 + self.documento.text())
+            # si no existe usuario con este documento:
+            if (
+                    not existeDocumento
+            ):
+                # Escribimos el texto explicativo
+                self.mensaje.setText("No existe un usuario con este documento:\n"
+                                     + self.documento.text())
 
-            # Hacemos que la ventana de dialogo se vea
-            self.ventanaDialogo.exec_()
+                # Hacemos que la ventana de dialogo se vea
+                self.ventanaDialogo.exec_()
 
 
 if __name__ == '__main__':
