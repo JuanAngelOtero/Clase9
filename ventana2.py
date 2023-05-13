@@ -7,6 +7,7 @@ from PyQt5 import QtGui
 import sys
 
 from cliente import Cliente
+from ventana3 import Ventana3
 
 
 class Ventana2(QMainWindow):
@@ -207,8 +208,27 @@ class Ventana2(QMainWindow):
                     # Aumentamos el contador:
                     self.contador += 1
 
-        # Establecemos el metodo para que funcionen todos los botones.
-        self.botones.idClicked.connect(self.metodo_accionBotones)
+        # ------ BOTON VOLVER -----
+
+        # Hacemos el boton para pasar a la siguiente ventana:
+        self.botonFormaTabular = QPushButton("Forma Tabular")
+
+        # Establecemos el ancho del botón:
+        self.botonFormaTabular.setFixedWidth(150)
+
+        # Le ponemos los estilos:
+        self.botonFormaTabular.setStyleSheet("background-color: #008B45;"
+                                       "color: #FFFFFF;"
+                                       "padding: 10px;"
+                                       "margin-top: 10px;"
+                                       )
+
+        # Hacemos que el boton botonForomaTabular tenga su metodo:
+        self.botonFormaTabular.clicked.connect(self.metodo_botonFormaTabular)
+
+        # Metemos el layout vertical el botonTabular:
+        self.vertical.addWidget(self.botonFormaTabular)
+
 
         # ------ BOTON VOLVER -----
 
@@ -236,6 +256,8 @@ class Ventana2(QMainWindow):
 
 
 
+
+
         # -------- OJO IMPORTANTE PONER AL FINAL ----------
 
         # indicamos que el layout pricipal fondo es horizontal:
@@ -248,6 +270,12 @@ class Ventana2(QMainWindow):
     def metodo_botonVolver(self):
         self.hide()
         self.ventanaanterior.show()
+
+    def metodo_botonFormaTabular(self):
+        self.hide()
+        self.ventana3 = Ventana3(self)
+        self.ventana3.show()
+
 
 
 
