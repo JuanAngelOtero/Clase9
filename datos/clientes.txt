@@ -1,3 +1,4 @@
 juan Pablo Medina;juanpmedina;12345678;1234567891;juanp@gmail.com;preg1;res1;preg2;res2;como se llama mi gato que murio en 2000;Ferdinan
 Julian Medina;jualinam;12345678;1234567897;julian@elpoli.edu.co;gato;tom;perro;rockie;bicicleta;triciclo
 juan angel;juanop;123456;123456789;juan@elpoli.edu.co;como  se llama tu gato;tom;como se llama tu perro;rocko;tines mas mascotas ;no
+Ana Maria Medina;anaM123;12345678;1062433097;anaM@elpoli.edu.co;Pais donde nacio mi abuela materna;argentina;Departamento donde naci;Cordoba;Cuantas mascotas he tenido hasta el momento;4
