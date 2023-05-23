@@ -8,6 +8,7 @@ import sys
 
 from cliente import Cliente
 from ventana3 import Ventana3
+from ventana4 import Ventana4
 
 
 class Ventana2(QMainWindow):
@@ -194,7 +195,7 @@ class Ventana2(QMainWindow):
                     self.verticalCuadricula.addWidget(self.botonAccion)
 
                     # Agregamos el boton al grupo, con su cedula como id:
-                    self.botones.addButton(self.botonAccion,int(self.usuarios[self.contador].documento))
+                    self.botones.addButton(self.botonAccion, int(self.usuarios[self.contador].documento))
 
                     # agregamos un espacio en blanco:
                     self.verticalCuadricula.addStretch()
@@ -208,7 +209,10 @@ class Ventana2(QMainWindow):
                     # Aumentamos el contador:
                     self.contador += 1
 
-        # ------ BOTON VOLVER -----
+        # Establecemos el método para que funcionen todos los botones.
+        self.botones.idClicked.connect(self.metodo_accionBotones)
+
+        # ------ BOTON FORMA TABULAR -----
 
         # Hacemos el boton para pasar a la siguiente ventana:
         self.botonFormaTabular = QPushButton("Forma Tabular")
@@ -250,14 +254,6 @@ class Ventana2(QMainWindow):
         #Metemos el layout vertical el botonVolver:
         self.vertical.addWidget(self.botonVolver)
 
-
-
-
-
-
-
-
-
         # -------- OJO IMPORTANTE PONER AL FINAL ----------
 
         # indicamos que el layout pricipal fondo es horizontal:
@@ -265,8 +261,10 @@ class Ventana2(QMainWindow):
 
     # metodo para controlar las acciones de los botones:
     def metodo_accionBotones(self, cedulaUsuario):
-        print(cedulaUsuario)
-
+        #print(cedulaUsuario)
+        self.hide()
+        self.ventana4 = Ventana4(self, cedulaUsuario)
+        self.ventana4.show()
     def metodo_botonVolver(self):
         self.hide()
         self.ventanaanterior.show()
