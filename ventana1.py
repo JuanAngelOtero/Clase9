@@ -8,6 +8,7 @@ from PyQt5.QtCore import Qt
 from cliente import Cliente
 from ventana2 import Ventana2
 
+
 class Ventana1(QMainWindow):
 
     # hacer el metodo de contrucción de la ventana
@@ -123,6 +124,7 @@ class Ventana1(QMainWindow):
         # Hacemos el campo para ingresar el password:
         self.password = QLineEdit()
         self.password.setFixedWidth(250)
+
         self.password.setEchoMode(QLineEdit.Password)
 
         # Agregamos estos en el formulario:
