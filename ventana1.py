@@ -63,7 +63,7 @@ class Ventana1(QMainWindow):
 
         # --------- LAYOUT IZQUIERDO ------------
 
-        # Creamos un layout del lado izquierdo:
+        # creamos un layout del lado izquierdo:
         self.ladoIzquierdo = QFormLayout()
 
         # Hacemos el letrero:
